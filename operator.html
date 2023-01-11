@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Operator</title>
+</head>
+
+<body>
+    <script>
+        /*Assignment Operator*/
+        let a = 10;
+        let b = 35;
+        a += b /* assignment operator dimana a merupakan shortcut a+b */
+        console.log(a); /*output = 45 */
+
+        console.log(a == b) /* output = false ; membandingkan kedua nilai sama */
+        console.log(a != b) /* output = trus ; membandingkan kedua nilai apakah tidak sama (tidak identik) */
+
+        /*Comparison Operator*/
+        const aString = "20";
+        const aNumber = 20;
+
+        console.log(aString == aNumber) /* true ; karena bernilai sama */
+        console.log(aString === aNumber) /* false ; karena tidak bertipe sama */
+
+        /*Logical Operator*/
+        let p = 10;
+        let q = 12;
+
+        /* AND operator */
+        console.log(p < 15 && q > 10);  /* (true && true) -> true */
+        console.log(p > 15 && q > 10); /* (false && trus) -> false */
+
+        //  OR operator //
+        console.log(p < 15 || q > 10); /* (true || true) -> true */
+        console.log(p > 15 || q > 10); /* (true || true) -> true */
+
+        /* NOT operator */
+        console.log(!(p > q)); /* !(false) -> true */
+        console.log(!(p > 15 || q < 15)); /* ! (false || true) => !true -> false */
+    </script>
+</body>
+
+</html>
